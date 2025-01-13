@@ -1,0 +1,32 @@
+ /* Import Google Fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+ body {
+   font-family: 'Poppins', sans-serif;
+ }
+
+ /* Custom Chat Admin Button */
+ .chat-admin-button {
+   position: fixed;
+   bottom: 2rem;
+   right: 2rem;
+   background-color: #25D366; /* WhatsApp green color */
+   color: white;
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+   transition: transform 0.3s ease-in-out;
+   z-index: 1000; /* Ensure it's on top */
+ }
+
+ .chat-admin-button:hover {
+   transform: scale(1.1);
+ }
+
+ .chat-admin-button img {
+   width: 30px; /* Set the size of the WhatsApp icon */
+ }
