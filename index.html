@@ -9,10 +9,12 @@
 </head>
 <body class="bg-gradient-to-b from-[#009EBC] to-[#006F7F] text-gray-100">
   <!-- Autoplay Music -->
-  <audio id="background-music" autoplay loop>
+  <audio id="background-music" autoplay loop muted>
     <source src="audio/yung kai - blue (Official Music Video).mp3" type="audio/mp3">
     Your browser does not support the audio element.
-  </audio>
+</audio>
+
+
 
   <!-- Header Section with Parallax Effect -->
   <header class="relative text-center py-16 sm:py-24 bg-gradient-to-r from-[#00A9D0] to-[#009EBC] rounded-b-3xl shadow-2xl transform transition-all ease-in-out duration-300 overflow-hidden">
@@ -66,5 +68,12 @@
   </div>
 
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+    window.onload = function() {
+      var audio = document.getElementById('background-music');
+      audio.play();
+      audio.muted = false;  // Enable sound after the page has loaded
+    };
+  </script>
 </body>
 </html>
