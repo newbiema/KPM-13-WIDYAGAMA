@@ -6,113 +6,213 @@
   <title>KPM Kelompok 13 || Welcome</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Link Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0f7fa 0%, #e1f5fe 100%);
+    }
+    .pattern {
+      background: url('https://www.toptal.com/designers/subtlepatterns/patterns/memphis-mini.png');
+      opacity: 0.1;
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-b from-[#009EBC] to-[#006F7F] text-gray-100">
-
-  <!-- Autoplay Music -->
-  <audio id="background-music" autoplay loop muted>
-    <source src="audio/yung kai - blue (Official Music Video).mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-  </audio>
+<body class="text-gray-900">
 
 <!-- Header Section with Parallax Effect -->
 <header class="relative text-center py-16 sm:py-24 bg-gradient-to-r from-[#00A9D0] to-[#009EBC] rounded-b-3xl shadow-2xl transform transition-all ease-in-out duration-300 overflow-hidden mb-12">
-    <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url('img/header.JPG');"></div>
-    <div class="absolute inset-0 bg-black opacity-40"></div>
-    
-    <img src="img/logo.png" alt="Logo KPM" class="mx-auto w-32 h-32 sm:w-40 sm:h-40 rounded-full shadow-xl border-4 border-white transform hover:scale-110 transition-all ease-in-out duration-300 z-10 relative">
-    
-    <div class="relative z-10 mt-8 sm:mt-12">
-      <h1 class="text-4xl sm:text-6xl font-bold text-white drop-shadow-xl animate__animated animate__fadeIn animate__delay-1s">
-        KPM 13 WIDYAGAMA
-      </h1>
-      <p class="text-lg sm:text-2xl text-gray-200 mt-2 sm:mt-4 animate__animated animate__fadeIn animate__delay-2s">
-        Bersama Membangun Desa untuk Masa Depan yang Lebih Baik
-      </p>
+  <!-- Background Image with Blur and Overlay -->
+  <div class="absolute inset-0 bg-cover bg-center blur-sm opacity-50 pattern" style="background-image: url('img/header.JPG');"></div>
+  <div class="absolute inset-0 bg-black opacity-40"></div>
+
+  <!-- Logo -->
+  <img src="img/logo.png" alt="Logo KPM" class="mx-auto w-32 h-32 sm:w-40 sm:h-40 rounded-full shadow-xl border-4 border-white transform hover:scale-110 transition-all ease-in-out duration-300 z-10 relative">
+
+  <!-- Text Content -->
+  <div class="relative z-10 mt-8 sm:mt-12">
+    <!-- Main Heading -->
+    <h1 class="text-4xl sm:text-6xl font-bold text-white drop-shadow-xl animate__animated animate__fadeIn animate__delay-1s">
+      KPM 13 WIDYAGAMA
+    </h1>
+    <!-- Subheading -->
+    <p class="text-lg sm:text-2xl text-gray-200 mt-2 sm:mt-4 animate__animated animate__fadeIn animate__delay-2s">
+      Bersama Membangun Desa untuk Masa Depan yang Lebih Baik
+    </p>
+    <!-- Decorative Elements -->
+    <div class="flex justify-center mt-6 gap-3 animate__animated animate__fadeInUp animate__delay-3s">
+      <span class="block w-4 h-4 rounded-full bg-white animate-bounce"></span>
+      <span class="block w-4 h-4 rounded-full bg-white animate-bounce delay-200"></span>
+      <span class="block w-4 h-4 rounded-full bg-white animate-bounce delay-400"></span>
     </div>
+    <!-- Call-to-Action Buttons -->
+    <div class="mt-6 sm:mt-8 flex justify-center gap-4">
+      <a href="#galeri" class="px-6 py-3 bg-white text-[#009EBC] font-bold rounded-full shadow-lg hover:shadow-xl hover:bg-[#f0f8ff] transition-all duration-300">
+        Jelajahi Galeri
+      </a>
+      <a href="#tentang-kami" class="px-6 py-3 bg-[#F7A072] text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:bg-[#F58A59] transition-all duration-300">
+        Tentang Kami
+      </a>
+    </div>
+  </div>
+
+  <!-- Animated Decorative Wave -->
+  <svg class="absolute bottom-0 left-0 w-full h-auto text-[#F7F8F8] opacity-80 z-0" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M0,224L48,192C96,160,192,96,288,90.7C384,85,480,139,576,170.7C672,203,768,213,864,202.7C960,192,1056,160,1152,128C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+  </svg>
 </header>
+
 
 <!-- Main Content Section -->
 <main class="flex flex-col items-center space-y-6 sm:space-y-8 mt-12 px-4">
 
-    <!-- Gallery Section -->
-    <section class="w-full text-center mb-12">
-      <h2 class="text-3xl font-semibold text-white mb-4">Galeri Kegiatan Kami</h2>
-      <p class="text-lg text-gray-200 mb-8">Lihat dokumentasi berbagai kegiatan yang telah kami lakukan untuk kemajuan desa.</p>
-      <div id="indicators-carousel" class="relative w-full" data-carousel="static">
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-          <!-- Carousel Items -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <img src="img/gallery/1.JPG" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="img/gallery/2.JPG" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="img/gallery/3.JPG" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
+<!-- Gallery Section -->
+<section class="w-full text-center mb-12 px-4" id="galeri">
+  <h2 class="text-4xl font-bold text-[#009EBC] mb-6">Galeri</h2>
+  <p class="text-lg text-gray-700 mb-10">
+    Jelajahi berbagai aktivitas menarik yang mendukung kemajuan desa kami.
+  </p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Card 1 -->
+    <div class="rounded-xl shadow-lg overflow-hidden bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+      <div class="relative">
+        <img src="/img/gallery/1.JPG" alt="Kegiatan 1" class="w-full h-64 object-cover">
+        <div class="absolute top-0 left-0 bg-gradient-to-r from-[#009EBC] via-[#00c9ff] to-[#009EBC] text-white px-4 py-2 rounded-br-xl shadow-md text-sm font-medium flex items-center">
+          <i class="fas fa-calendar-alt mr-2 text-lg animate-bounce"></i> 12 Januari 2025
         </div>
-        <!-- Carousel Indicators -->
-        <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        </div>
-        <!-- Carousel Navigation -->
-        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
       </div>
-    </section>
+      <div class="p-6">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-map-marker-alt text-[#009EBC] text-xl mr-3 animate-pulse"></i>
+          <p class="text-gray-700 text-sm font-medium">Rumah Pak RT 28</p>
+        </div>
+        <div class="flex items-center mb-4">
+          <i class="fas fa-tasks text-[#00c9ff] text-xl mr-3 animate-pulse"></i>
+          <p class="text-gray-700 text-sm font-medium">Survey dan Dokumentasi</p>
+        </div>
+      </div>
+    </div>
 
-    <!-- Social Media Links -->
-    <section class="w-full text-center mt-12 mb-12">
-      <h2 class="text-3xl font-semibold text-white mb-4">Follow Kami di Media Sosial</h2>
-      <p class="text-lg text-gray-200 mb-8">Ikuti kegiatan kami lebih dekat melalui platform sosial media berikut.</p>
-      <div class="flex flex-col w-full max-w-xl space-y-6 mt-8 mx-auto">
-        <a href="https://www.instagram.com/kpm13widyagama/" class="block bg-[#006F7F] text-white py-4 sm:py-5 px-6 sm:px-8 rounded-lg shadow-lg text-center hover:bg-[#00A9D0] transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <img src="img/instagram.png" alt="" class="inline-block mr-2 w-8 sm:w-10 transform transition-all duration-300 hover:scale-110">Instagram
-        </a>
-        <a href="https://www.tiktok.com/@kpm13widyagama" class="block bg-[#006F7F] text-white py-4 sm:py-5 px-6 sm:px-8 rounded-lg shadow-lg text-center hover:bg-[#00A9D0] transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <img src="img/tik-tok.png" alt="" class="inline-block mr-2 w-8 sm:w-10 transform transition-all duration-300 hover:scale-110">Tiktok
-        </a>
-        <a href="https://youtube.com/@kpm13universitaswidyagama?si=uePjyweTPE34UXSY" class="block bg-[#006F7F] text-white py-4 sm:py-5 px-6 sm:px-8 rounded-lg shadow-lg text-center hover:bg-[#00A9D0] transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <img src="img/youtube.png" alt="" class="inline-block mr-2 w-8 sm:w-10 transform transition-all duration-300 hover:scale-110">Youtube
-        </a>
+    <!-- Card 2 -->
+    <div class="rounded-xl shadow-lg overflow-hidden bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+      <div class="relative">
+        <img src="/img/gallery/2.JPG" alt="Kegiatan 2" class="w-full h-64 object-cover">
+        <div class="absolute top-0 left-0 bg-gradient-to-r from-[#009EBC] via-[#00c9ff] to-[#009EBC] text-white px-4 py-2 rounded-br-xl shadow-md text-sm font-medium flex items-center">
+          <i class="fas fa-calendar-alt mr-2 text-lg animate-bounce"></i> 12 Januari 2025
+        </div>
       </div>
-    </section>
+      <div class="p-6">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-map-marker-alt text-[#009EBC] text-xl mr-3 animate-pulse"></i>
+          <p class="text-gray-700 text-sm font-medium">Rumah Pak RW 8</p>
+        </div>
+        <div class="flex items-center mb-4">
+          <i class="fas fa-tasks text-[#00c9ff] text-xl mr-3 animate-pulse"></i>
+          <p class="text-gray-700 text-sm font-medium">Survey Dan Dokumentasi</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="rounded-xl shadow-lg overflow-hidden bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+      <div class="relative">
+        <img src="/img/gallery/3.JPG" alt="Kegiatan 3" class="w-full h-64 object-cover">
+        <div class="absolute top-0 left-0 bg-gradient-to-r from-[#009EBC] via-[#00c9ff] to-[#009EBC] text-white px-4 py-2 rounded-br-xl shadow-md text-sm font-medium flex items-center">
+          <i class="fas fa-calendar-alt mr-2 text-lg animate-bounce"></i> 12 Januari 2025
+        </div>
+      </div>
+      <div class="p-6">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-map-marker-alt text-[#009EBC] text-xl mr-3 animate-pulse"></i>
+          <p class="text-gray-700 text-sm font-medium">Rumah Pak Rt 25</p>
+        </div>
+        <div class="flex items-center mb-4">
+          <i class="fas fa-tasks text-[#00c9ff] text-xl mr-3 animate-pulse"></i>
+          <p class="text-gray-700 text-sm font-medium">Aktivitas: Observasi Lapangan</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="rounded-xl shadow-lg overflow-hidden bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+      <div class="relative">
+        <img src="/img/gallery/4.JPG" alt="Kegiatan 3" class="w-full h-64 object-cover">
+        <div class="absolute top-0 left-0 bg-gradient-to-r from-[#009EBC] via-[#00c9ff] to-[#009EBC] text-white px-4 py-2 rounded-br-xl shadow-md text-sm font-medium flex items-center">
+          <i class="fas fa-calendar-alt mr-2 text-lg animate-bounce"></i> 12 Januari 2025
+        </div>
+      </div>
+      <div class="p-6">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-map-marker-alt text-[#009EBC] text-xl mr-3 animate-pulse"></i>
+          <p class="text-gray-700 text-sm font-medium">Rumah Pak Rt 30</p>
+        </div>
+        <div class="flex items-center mb-4">
+          <i class="fas fa-tasks text-[#00c9ff] text-xl mr-3 animate-pulse"></i>
+          <p class="text-gray-700 text-sm font-medium">Survey Dan Dokumentasi</p>
+        </div>
+
+      </div>
+    </div>
+
+        <!-- Card 4 -->
+        <div class="rounded-xl shadow-lg overflow-hidden bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+          <div class="relative">
+            <img src="/img/gallery/5.jpg" alt="Kegiatan 3" class="w-full h-64 object-cover">
+            <div class="absolute top-0 left-0 bg-gradient-to-r from-[#009EBC] via-[#00c9ff] to-[#009EBC] text-white px-4 py-2 rounded-br-xl shadow-md text-sm font-medium flex items-center">
+              <i class="fas fa-calendar-alt mr-2 text-lg animate-bounce"></i> 12 Januari 2025
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-map-marker-alt text-[#009EBC] text-xl mr-3 animate-pulse"></i>
+              <p class="text-gray-700 text-sm font-medium">Rumah Pak Rt 30</p>
+            </div>
+            <div class="flex items-center mb-4">
+              <i class="fas fa-tasks text-[#00c9ff] text-xl mr-3 animate-pulse"></i>
+              <p class="text-gray-700 text-sm font-medium">Survey Dan Dokumentasi</p>
+            </div>
+    
+          </div>
+        </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- Social Media Links -->
+<section class="w-full text-center mt-12 mb-12">
+  <h2 class="text-3xl font-semibold text-[#009EBC] mb-4">Follow Kami di Media Sosial</h2>
+  <p class="text-lg text-gray-700 mb-8">Ikuti kegiatan kami lebih dekat melalui platform sosial media berikut.</p>
+  <div class="flex flex-wrap justify-center gap-6">
+    <a href="https://www.instagram.com/kpm13widyagama/" class="flex items-center bg-white py-3 px-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all">
+      <img src="img/instagram.png" alt="Instagram" class="w-8 mr-3">
+      <span class="text-[#009EBC] font-semibold text-lg">Instagram</span>
+    </a>
+    <a href="https://www.tiktok.com/@kpm13widyagama" class="flex items-center bg-white py-3 px-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all">
+      <img src="img/tik-tok.png" alt="TikTok" class="w-8 mr-3">
+      <span class="text-[#009EBC] font-semibold text-lg">TikTok</span>
+    </a>
+    <a href="https://youtube.com/@kpm13universitaswidyagama?si=uePjyweTPE34UXSY" class="flex items-center bg-white py-3 px-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all">
+      <img src="img/youtube.png" alt="YouTube" class="w-8 mr-3">
+      <span class="text-[#009EBC] font-semibold text-lg">YouTube</span>
+    </a>
+  </div>
+</section>
 </main>
 
+<!-- Footer -->
+<footer class="text-center mt-16 sm:mt-20 py-6 sm:py-8 bg-gradient-to-r from-[#00A9D0] to-[#006F7F] rounded-t-3xl shadow-lg">
+  <p class="text-sm sm:text-lg text-white">&copy; 2025 KPM Kelompok 13. All Rights Reserved.</p>
+  <p class="text-xs sm:text-sm text-gray-200">Desa Sukolilo, Dusun Bendo, Kec. Jabung, Kab. Malang</p>
+</footer>
 
-  <!-- Footer Section -->
-  <footer class="text-center mt-16 sm:mt-20 py-6 sm:py-8 bg-gradient-to-r from-[#006F7F] to-[#00A9D0] rounded-t-3xl shadow-lg">
-    <p class="text-sm sm:text-lg text-white">&copy; 2025 KPM Kelompok 13. All Rights Reserved.</p>
-    <p class="text-xs sm:text-sm text-gray-200">Desa Sukolilo, Dusun Bendo, Kec. Jabung, Kab. Malang</p>
-  </footer>
-
-  <!-- Chat Admin Button
-  <div >
-    <a href="whatsapp://send?text=Hallo Admin 👋&phone=+6287892219615" class="bg-[#25D366] text-white rounded-full p-4 fixed bottom-6 right-6 shadow-lg transform hover:scale-110 transition-all">
-      <img src="img/whatsapp.png" alt="Chat Admin" class="w-6 h-6">
-    </a>
-  </div> -->
-
-
-  <script src="//code.tidio.co/afqor0emxzekrqltz0affl5fxn7req9h.js" async></script>
+<script src="js/calltoaction.js"></script>
 </body>
 </html>
