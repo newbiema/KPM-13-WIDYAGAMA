@@ -49,11 +49,11 @@
     </div>
     <!-- Call-to-Action Buttons -->
     <div class="mt-6 sm:mt-8 flex justify-center gap-4">
-      <a href="#galeri" class="px-6 py-3 bg-white text-[#009EBC] font-bold rounded-full shadow-lg hover:shadow-xl hover:bg-[#f0f8ff] transition-all duration-300">
-        Jelajahi Galeri
-      </a>
-      <a href="#tentang-kami" class="px-6 py-3 bg-[#F7A072] text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:bg-[#F58A59] transition-all duration-300">
+      <a href="#tentang-kami" class="px-6 py-3 bg-white text-[#009EBC] font-bold rounded-full shadow-lg hover:shadow-xl hover:bg-[#f0f8ff] transition-all duration-300">
         Tentang Kami
+      </a>
+      <a href="#galeri" class="px-6 py-3 bg-[#F7A072] text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:bg-[#F58A59] transition-all duration-300">
+        Jelajahi Galeri 
       </a>
     </div>
   </div>
@@ -67,6 +67,81 @@
 
 <!-- Main Content Section -->
 <main class="flex flex-col items-center space-y-6 sm:space-y-8 mt-12 px-4">
+
+<!-- Tentang Kami Section -->
+<section id="tentang-kami" class="py-16 px-4 sm:px-8 lg:px-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-[#009EBC] mb-6">
+      Tentang Kami
+    </h2>
+    <p class="text-lg text-gray-700 text-center max-w-2xl mx-auto mb-12">
+      Kami adalah kelompok mahasiswa KPM UNIVERSITAS WIDYAGAMA yang berkomitmen untuk memajukan Desa Sukolilo, Dusun Bendo, Kecamatan Jabung, Kabupaten Malang melalui berbagai program pembangunan berkelanjutan. Bersama-sama, kami menginspirasi perubahan positif dan menciptakan masa depan yang lebih baik.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Gambar -->
+      <div class="relative">
+        <img src="img/tentang.jpg" alt="Tentang Kami" class="rounded-lg shadow-lg w-full object-cover h-96">
+        <div class="absolute top-0 left-0 bg-gradient-to-r from-[#00A9D0] to-[#009EBC] text-white px-4 py-2 rounded-br-xl shadow-md text-sm font-medium">
+          <i class="fas fa-calendar-alt mr-2"></i> Sejak 2025
+        </div>
+      </div>
+
+      <!-- Konten -->
+      <div>
+        <h3 class="text-3xl font-bold text-[#009EBC] mb-4">
+          Misi dan Visi Kami
+        </h3>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Misi kami adalah memberdayakan masyarakat lokal melalui inovasi dan kerjasama, serta menciptakan dampak positif bagi lingkungan. Kami percaya bahwa dengan kerja keras dan kebersamaan, kita dapat membangun masa depan yang lebih cerah untuk generasi mendatang.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Card 1 -->
+          <div class="flex items-start space-x-4">
+            <i class="fas fa-users text-[#009EBC] text-3xl"></i>
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800">Kolaborasi</h4>
+              <p class="text-gray-600 text-sm">
+                Menghubungkan komunitas lokal dan pihak luar untuk solusi yang inovatif.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="flex items-start space-x-4">
+            <i class="fas fa-leaf text-[#009EBC] text-3xl"></i>
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800">Keberlanjutan</h4>
+              <p class="text-gray-600 text-sm">
+                Fokus pada program yang ramah lingkungan dan berjangka panjang.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="flex items-start space-x-4">
+            <i class="fas fa-hands-helping text-[#009EBC] text-3xl"></i>
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800">Kepedulian</h4>
+              <p class="text-gray-600 text-sm">
+                Berkontribusi untuk kesejahteraan sosial dan ekonomi masyarakat desa.
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="flex items-start space-x-4">
+            <i class="fas fa-lightbulb text-[#009EBC] text-3xl"></i>
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800">Inovasi</h4>
+              <p class="text-gray-600 text-sm">
+                Mendorong ide-ide kreatif untuk mengatasi tantangan di desa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Gallery Section -->
 <section class="w-full text-center mb-12 px-4" id="galeri">
@@ -186,25 +261,60 @@
 
 
 
-<!-- Social Media Links -->
-<section class="w-full text-center mt-12 mb-12">
-  <h2 class="text-3xl font-semibold text-[#009EBC] mb-4">Follow Kami di Media Sosial</h2>
-  <p class="text-lg text-gray-700 mb-8">Ikuti kegiatan kami lebih dekat melalui platform sosial media berikut.</p>
-  <div class="flex flex-wrap justify-center gap-6">
-    <a href="https://www.instagram.com/kpm13widyagama/" class="flex items-center bg-white py-3 px-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all">
-      <img src="img/instagram.png" alt="Instagram" class="w-8 mr-3">
-      <span class="text-[#009EBC] font-semibold text-lg">Instagram</span>
-    </a>
-    <a href="https://www.tiktok.com/@kpm13widyagama" class="flex items-center bg-white py-3 px-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all">
-      <img src="img/tik-tok.png" alt="TikTok" class="w-8 mr-3">
-      <span class="text-[#009EBC] font-semibold text-lg">TikTok</span>
-    </a>
-    <a href="https://youtube.com/@kpm13universitaswidyagama?si=uePjyweTPE34UXSY" class="flex items-center bg-white py-3 px-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all">
-      <img src="img/youtube.png" alt="YouTube" class="w-8 mr-3">
-      <span class="text-[#009EBC] font-semibold text-lg">YouTube</span>
-    </a>
+<!-- Social Media Links Section -->
+<section class="w-full py-16 bg-gradient-to-b from-[#00A9D0] via-white to-[#009EBC] text-gray-800 relative">
+  <div class="absolute inset-0 bg-pattern opacity-10"></div>
+  <div class="max-w-7xl mx-auto px-6 sm:px-12 relative z-10">
+    <h2 class="text-4xl font-bold text-[#009EBC] text-center mb-6 animate__animated animate__fadeInDown">
+      Follow Kami di Media Sosial
+    </h2>
+    <p class="text-lg text-gray-600 text-center mb-12 animate__animated animate__fadeInUp">
+      Jangan lewatkan informasi terbaru kami, langsung dari platform favoritmu!
+    </p>
+
+    <!-- Social Media Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/kpm13widyagama/" class="group relative flex flex-col items-center justify-center bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition-all duration-300">
+        <div class="relative w-14 h-14 mb-4">
+          <img src="img/instagram.png" alt="Instagram" class="absolute inset-0 w-full h-full object-cover group-hover:animate-spin-slow">
+        </div>
+        <h3 class="text-xl font-semibold text-[#DD2A7B] group-hover:text-[#F58529] transition-colors duration-300">
+          Instagram
+        </h3>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@kpm13widyagama" class="group relative flex flex-col items-center justify-center bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition-all duration-300">
+        <div class="relative w-14 h-14 mb-4">
+          <img src="img/tik-tok.png" alt="TikTok" class="absolute inset-0 w-full h-full object-cover group-hover:animate-bounce">
+        </div>
+        <h3 class="text-xl font-semibold text-black group-hover:text-[#009EBC] transition-colors duration-300">
+          TikTok
+        </h3>
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://youtube.com/@kpm13universitaswidyagama?si=uePjyweTPE34UXSY" class="group relative flex flex-col items-center justify-center bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition-all duration-300">
+        <div class="relative w-14 h-14 mb-4">
+          <img src="img/youtube.png" alt="YouTube" class="absolute inset-0 w-full h-full object-cover group-hover:animate-pulse">
+        </div>
+        <h3 class="text-xl font-semibold text-[#FF0000] group-hover:text-[#CC0000] transition-colors duration-300">
+          YouTube
+        </h3>
+      </a>
+    </div>
+
+    <!-- Decoration -->
+    <div class="mt-12 flex justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-[#009EBC] animate__animated animate__zoomIn" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M10 15l-3.5 3.5a.75.75 0 01-1.06-1.06l3.5-3.5L5.44 10l-3.5-3.5A.75.75 0 013.5 5.44L10 12l6.5-6.5a.75.75 0 111.06 1.06L12.56 10l3.5 3.5a.75.75 0 01-1.06 1.06L10 15z" />
+      </svg>
+    </div>
   </div>
 </section>
+
+
 </main>
 
 <!-- Footer -->
